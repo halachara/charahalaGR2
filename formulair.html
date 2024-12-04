@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> formulaire de chara hala</title>
+</head>
+<body>
+    <h1> vos informations</h1>
+    <form method="get" action="traitement.html">
+        <label for="nom">votre nom</label>                                  <!--text-->
+        <input type="text" id="nom" required>
+        <br><br>
+        <label for="dateb">la date de naissance</label>                     <!--date-->
+        <input type="date" id="dateb" required>
+        <br><br>
+        <label for="email" >l'email</label>                                 <!--email-->
+        <input type="email" id="email" placeholder="****@gmail.com" required>
+        <br><br>
+        <label for="num">le numero</label>                                  <!--num-->
+        <input type="tel" id="num" required>
+        <br><br>
+        <label for="pw"> le mot de pass</label>                             <!--password-->
+        <input type="password" id="pw" required>
+        <br><br>
+        <h1>vos avis </h1>
+        <p>                                                               <!--chekbox-->
+            Quel produit avez-vous acheté/utilisé ?<br />
+            <input type="checkbox" id="Sacs-poubelle" />
+            <label for="Sacs-poubelle">Sacs-poubelle</label><br />
+            <input type="checkbox" id="Sacs de congélation" />
+            <label for="Sacs de congélation">Sacs de congélation</label><br />
+            <input type="checkbox" id="Sacs d'expédition" />
+            <label for="Sacs d'expédition">Sacs d'expédition</label><br />
+            <input type="checkbox" id="Nappes en plastique" />
+            <label for="Nappes en plastique">Nappes en plastique</label><br/>
+            </p> 
+            <label for="aspects">Quels aspects du produit vous ont le plus plu ?</label>                <!--select-->
+         <select id="aspects" name="aspects"> 
+            <option value="Qualité">Qualité</option>
+            <option value="Prix"> Prix</option>
+            <option value="Durabilité">Durabilité</option>
+            <option value="Emballage">Emballage</option>
+          </select>
+          <br><br>
+            <p>
+                Comment avez-vous découvert nos produits ?<br />                 <!--radio-->
+                <input type="radio" name="prod" id="Pub" value="Publicité en ligne" />
+                <label for="Pub">Publicité en ligne</label><br />
+                <input type="radio" name="prod" value="Bouche-à-oreille" id="Bào" />
+                <label for="Bào">Bouche-à-oreille</label><br/>
+                <input type="radio" name="prod" value="Réseaux sociaux" id="rs" />
+                <label for="rs">Réseaux sociaux</label><br/>
+                <input type="radio" name="prod" value="Recherche sur Internet" id="rsi" />
+                <label for="rsi">Recherche sur Internet</label><br/>
+                <input type="radio" name="prod" value="En magasin" id="mag" />
+                <label for="mag">En magasin</label><br/>
+                <input type="radio" name="prod" value="Autre" id="Autre" />
+                <label for="Autre">Autre<textarea name="autre" id="autre" rows="1" cols="20"></textarea> </label><br/>
+                </p>
+            <label for="comment"> Vos suggestions? </label>                    <!--comment-->
+             <textarea name="comment" id="comment" rows="4" cols="30"></textarea>
+            <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
